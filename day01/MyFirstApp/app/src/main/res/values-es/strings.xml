@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 西班牙语 -->
+<resources>
+    <string name="title">Mi Aplicación</string>
+    <string name="hello_world">Hola Mundo!</string>
+</resources>

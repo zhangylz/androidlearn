@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    &lt;!&ndash; Base application theme. &ndash;&gt;-->
+<!--    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+<!--        &lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+<!--        <item name="colorPrimary">@color/colorPrimary</item>-->
+<!--        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+<!--        <item name="colorAccent">@color/colorAccent</item>-->
+<!--    </style>-->
+
+<!--    <style name="AppTheme.NoActionBar">-->
+<!--        <item name="windowActionBar">false</item>-->
+<!--        <item name="windowNoTitle">true</item>-->
+<!--    </style>-->
+
+<!--    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />-->
+
+<!--    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />-->
+
+    <!-- 应用于程序或者活动的主题 -->
+    <style name="CustomActionBarTheme"
+        parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+    </style>
+
+<!--    &lt;!&ndash; ActionBar 样式 &ndash;&gt;-->
+<!--    <style name="MyActionBar"-->
+<!--        parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">-->
+<!--        <item name="android:background">@drawable/actionbar_background</item>-->
+<!--    </style>-->
+    <!-- ActionBar 样式 -->
+    <style name="MyActionBar"
+        parent="Theme.AppCompat.Light.DarkActionBar">
+<!--        <item name="android:background">@drawable/actionbar_background</item>-->
+<!--        <item name="android:windowActionBarOverlay">true</item>-->
+        <!-- 兼容支持库 -->
+        <item name="windowActionBarOverlay">true</item>
+<!--        <item name="background">@drawable/actionbar_background1</item>-->
+<!--        <item name="backgroundColor">#FF0000</item>-->
+    </style>
+</resources>

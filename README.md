@@ -1,5 +1,8 @@
 start android learn
 
+请对照 博客查看
+https://mp.csdn.net/console/columnManage/10258404
+
 参考
 1.  http://hukai.me/android-training-course-in-chinese/basics/firstapp/building-ui.html
 2.  https://github.com/zhangylz/android2

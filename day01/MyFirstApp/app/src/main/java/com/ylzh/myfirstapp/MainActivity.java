@@ -10,16 +10,21 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     public final static String EXTRA_MESSAGE = "com.ylzh.myfirstapp.MESSAGE";
+
+    // buttons
+    private Button mSendMessage = null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // setContentView(R.layout.activity_main);
-        setContentView(R.layout.news_articles);
+         setContentView(R.layout.activity_main);
+//        setContentView(R.layout.news_articles);
 
         // 确认 Activity 使用的布局版本包含 fragment_container FrameLayout
         if (findViewById(R.id.fragment_container) != null) {
@@ -42,6 +47,10 @@ public class MainActivity extends AppCompatActivity {
 //            getSupportFragmentManager().beginTransaction()
 //                    .add(R.id.fragment_container, firstFragment).commit();
         }
+
+        // button event
+        mSendMessage = (Button)findViewById(R.id.btn_sendMessage);
+        mSendMessage.setOnClickListener(this);
     }
 //
 //    /** Called when the user clicks the Send button */
@@ -117,5 +126,61 @@ public class MainActivity extends AppCompatActivity {
 
         // 执行事务
         transaction.commit();
+    }
+
+    public void onDeleteFragment(View view) {
+        FragmentTransaction transaction = getFragmentManager().beginTransaction();
+//        Fragment fragment=getFragmentManager().findFragmentByTag("CamFragmentOpen");
+        Fragment fragment=getFragmentManager().findFragmentById(R.id.fragment_container);
+        if (fragment != null) {
+            transaction.remove(fragment);
+            transaction.commit();
+        }
+
+
+//        @Override
+//        public void onClick(View v) {
+//            // 获取到FragmentManager对象
+//            FragmentManager fragmentManager = getFragmentManager();
+//            // 开启一个事务
+//            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+//
+//            // Fragment操作
+//            switch (v.getId()) {
+//                case R.id.add_btn:
+//                    // 向容器内加入Fragment
+//                    if (!mSecondFragment.isAdded()) {
+//                        fragmentTransaction.add(R.id.fragment_container1, mSecondFragment);
+//                    }
+//                    if (!mThirdFragment.isAdded()) {
+//                        fragmentTransaction.add(R.id.fragment_container2, mThirdFragment);
+//                    }
+//                    break;
+//                case R.id.remove_btn:
+//                    // 从容器类移除Fragment
+//                    fragmentTransaction.remove(mSecondFragment);
+//                    break;
+//                case R.id.replace_btn:
+//                    if (!mSecondFragment.isAdded()) {
+//                        fragmentTransaction.replace(R.id.fragment_container2, mSecondFragment);
+//                    }
+//                    break;
+//                default:
+//                    break;
+//            }
+//
+//            // 提交事务
+//            fragmentTransaction.commit();
+//        }
+
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.btn_sendMessage:
+                System.out.println("yes send message");
+                break;
+        }
     }
 }

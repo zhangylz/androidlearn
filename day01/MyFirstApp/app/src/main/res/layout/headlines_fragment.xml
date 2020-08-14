@@ -19,4 +19,12 @@
         android:layout_weight="1"
         android:text="btnChange"
         android:onClick="onChangeOtherFragment" />
+
+    <Button
+        android:id="@+id/deleteFragmentBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="delete"
+        android:onClick="onDeleteFragment" />
 </LinearLayout>

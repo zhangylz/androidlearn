@@ -1,1 +1,1 @@
-include ':app', ':qqlist'
+include ':app', ':qqlist', ':callbrower'

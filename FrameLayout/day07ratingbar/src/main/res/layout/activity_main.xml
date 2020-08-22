@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ylzh.day07ratingbar.MainActivity">
+
+    <!-- 店铺评分-->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="店铺评分"
+        android:textSize="20sp"
+        android:layout_above="@+id/btn"
+        android:layout_marginBottom="130dp"/>
+    <!-- 星级评分条 -->
+    <!--android:isIndicator 用于指定该星级评分条是否允许用户改变，true为不允许改变
+     android:numStars 用于指定该星级评分条总共有多少个星
+     android:rating 用于指定该星级评分条默认的星级
+     android:stepSize 用于指定每次最少需要改变多少个星级，默认为0.5个-->
+    <RatingBar
+        android:id="@+id/ratingBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:rating="1"
+        android:isIndicator="true"
+        android:layout_above="@+id/btn"
+        android:layout_marginBottom="60dp"/>
+    <!--发表评价-->
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="#FF5000"
+        android:text="发表评价" />
+</RelativeLayout>

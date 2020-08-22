@@ -5,6 +5,10 @@
       <module fileurl="file://$PROJECT_DIR$/FrameLayout.iml" filepath="$PROJECT_DIR$/FrameLayout.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/callbrower/callbrower.iml" filepath="$PROJECT_DIR$/callbrower/callbrower.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day07progressbar/day07progressbar.iml" filepath="$PROJECT_DIR$/day07progressbar/day07progressbar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day07ratingbar/day07ratingbar.iml" filepath="$PROJECT_DIR$/day07ratingbar/day07ratingbar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day07runstopact/day07runstopact.iml" filepath="$PROJECT_DIR$/day07runstopact/day07runstopact.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day07seekbar/day07seekbar.iml" filepath="$PROJECT_DIR$/day07seekbar/day07seekbar.iml" />
       <module fileurl="file://$PROJECT_DIR$/qqlist/qqlist.iml" filepath="$PROJECT_DIR$/qqlist/qqlist.iml" />
     </modules>
   </component>

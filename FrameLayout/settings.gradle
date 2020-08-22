@@ -1,1 +1,1 @@
-include ':app', ':qqlist', ':callbrower'
+include ':app', ':qqlist', ':callbrower', ':day07progressbar', ':day07seekbar', ':day07ratingbar', ':day07runstopact'

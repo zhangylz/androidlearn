@@ -12,6 +12,10 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/callbrower" />
+            <option value="$PROJECT_DIR$/day07progressbar" />
+            <option value="$PROJECT_DIR$/day07ratingbar" />
+            <option value="$PROJECT_DIR$/day07runstopact" />
+            <option value="$PROJECT_DIR$/day07seekbar" />
             <option value="$PROJECT_DIR$/qqlist" />
           </set>
         </option>

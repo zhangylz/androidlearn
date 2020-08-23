@@ -11,6 +11,8 @@
       <module fileurl="file://$PROJECT_DIR$/day07ratingbar/day07ratingbar.iml" filepath="$PROJECT_DIR$/day07ratingbar/day07ratingbar.iml" />
       <module fileurl="file://$PROJECT_DIR$/day07runstopact/day07runstopact.iml" filepath="$PROJECT_DIR$/day07runstopact/day07runstopact.iml" />
       <module fileurl="file://$PROJECT_DIR$/day07seekbar/day07seekbar.iml" filepath="$PROJECT_DIR$/day07seekbar/day07seekbar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day08intentfilter/day08intentfilter.iml" filepath="$PROJECT_DIR$/day08intentfilter/day08intentfilter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day08keycodevent/day08keycodevent.iml" filepath="$PROJECT_DIR$/day08keycodevent/day08keycodevent.iml" />
       <module fileurl="file://$PROJECT_DIR$/qqlist/qqlist.iml" filepath="$PROJECT_DIR$/qqlist/qqlist.iml" />
     </modules>
   </component>

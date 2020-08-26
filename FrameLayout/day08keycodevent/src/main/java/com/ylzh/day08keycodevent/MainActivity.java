@@ -2,10 +2,13 @@ package com.ylzh.day08keycodevent;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.ContextMenu;
 import android.view.KeyEvent;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -22,11 +25,29 @@ public class MainActivity extends AppCompatActivity {
         textView.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View v) {
+                Log.e("error", v.toString());
                 registerForContextMenu(v);
                 openContextMenu(v);
                 return true;
             }
         });
+
+        final HatView hatView = new HatView(this);
+        hatView.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                float xOffset = (float)(hatView.bitMapW * 0.5);
+                float yOffset = ( float)(hatView.bitMapH*0.5);
+                Log.e("error", xOffset +":::" + yOffset);
+                hatView.bitMapX = event.getX() -xOffset;
+                hatView.bitMapY = event.getY() -yOffset;
+                hatView.invalidate();
+                return true;
+            }
+        });
+
+        RelativeLayout relativeLayout = (RelativeLayout)findViewById(R.id.layout);
+        relativeLayout.addView(hatView);
     }
 
     @Override
